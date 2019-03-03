@@ -12,9 +12,11 @@
  '(custom-enabled-themes (quote (sanityinc-solarized-dark)))
  '(custom-safe-themes
    (quote
-    ("4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" default)))
+    ("4cf3221feff536e2b3385209e9b9dc4c2e0818a69a1cdb4b522756bcdf4e00a4" "4aee8551b53a43a883cb0b7f3255d6859d766b6c5e14bcb01bed572fcbef4328" default)))
  '(inhibit-startup-screen t)
- '(package-selected-packages (quote (magit color-theme-sanityinc-solarized beacon)))
+ '(package-selected-packages
+   (quote
+    (ace-window magit color-theme-sanityinc-solarized beacon)))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -35,4 +37,10 @@
 
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "C-x w") 'whitespace-mode)
+(global-set-key (kbd "M-o") 'ace-window)
+
+(custom-set-faces
+ '(aw-leading-char-face
+   ((t (:inherit ace-jump-face-foreground :height 1.5)))))
+
 

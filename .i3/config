@@ -27,10 +27,12 @@ font pango:monospace 8
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
-set $up o
-set $down l
-set $left k
-set $right odiaeresis
+set $up l
+set $down k
+set $left j
+set $right semicolon
+
+bindsym $mod+o exec i3-easyfocus
 
 bindsym $mod+Shift+Return exec i3lock
 # use Mouse+Mod1 to drag floating windows to their wanted position
