@@ -23,7 +23,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(aw-leading-char-face ((t (:inherit ace-jump-face-foreground :height 1.5)))))
 
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
                          ("melpa" . "https://melpa.org/packages/")))
@@ -32,15 +32,12 @@
 (windmove-default-keybindings)
 (beacon-mode 1)
 (server-start)
+(menu-bar-mode 0)
 
 ;; Magit
 
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "C-x w") 'whitespace-mode)
 (global-set-key (kbd "M-o") 'ace-window)
-
-(custom-set-faces
- '(aw-leading-char-face
-   ((t (:inherit ace-jump-face-foreground :height 1.5)))))
 
 
